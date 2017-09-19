@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'Canelo Punch Count', 'GGG Punch Count', {role: 'tooltip'}],
+          [0, 1, 1, "1 jab"],
+          [1, 1, 1, "1 jab"],
+          [2, 0, 1, "1 lead hook, 1 rear hook"],
+          [3, 1, 1, "1 straight"],
+          [4, 0, 0, "jab"],
+          [5, 1, 1, "jab"],
+          [6, 0, 1, "jab"],
+          [7, 0, 0, "jab"],
+          [8, 1, 1, "jab"],
+        ]);
+
+        var options = {
+          title: 'Canelo vs GGG Round 1',
+          bar: { groupWidth: "50%" },
+          hAxis: {title: 'Time', minValue: 0, maxValue: 180},
+          vAxis: {title: 'Punches Thrown', minValue: 0, maxValue: 5}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
