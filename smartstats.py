@@ -42,16 +42,17 @@ key_map = {
     "landed-body-i": (1, "body rear upper"),
 }
 
-def start(fighter, round, start_offset):
+def start(fighter, round, start_offset, time_scale):
     state = {}
     state['fighter'] = fighter
-    state['round'] = str(round)
-    state['start_offset'] = int(start_offset)
+    state['round'] = round
+    state['start_offset'] = start_offset
     state['start_time'] = datetime.datetime.now()
     state['stats'] = []
     state['paused'] = False
     state['pause_elapsed_seconds'] = 0
     state['pointer'] = 0
+    state['time_scale'] = time_scale
 
     print banner
     print "-----------------------------"
@@ -155,9 +156,12 @@ def onKeyPress(state, punch_type):
         onTimeTravelForward(state)
     else:
         now = datetime.datetime.now()
-        raw_diff = (now - state['start_time']).total_seconds()
-        diff = str(int(round(raw_diff - state['pause_elapsed_seconds'])))
-        stat = [diff, state['round'], state['fighter'], str(punch_type[0]), punch_type[1]]
+        diff = (now - state['start_time']).total_seconds()
+        pause_adjusted = diff - state['pause_elapsed_seconds']
+        time_scale_adjusted = pause_adjusted / state['time_scale']
+        rounded = int(round(time_scale_adjusted))
+
+        stat = [str(rounded), state['round'], state['fighter'], str(punch_type[0]), punch_type[1]]
         state['stats'].append(stat)
         state['pointer'] += 1
         print stat
@@ -165,17 +169,18 @@ def onKeyPress(state, punch_type):
 
 def main():
     if len(sys.argv) < 3:
-        print "smartstats.py fighter round [start_offset]"
+        print "smartstats.py fighter round start_offset time_scale"
         exit()
 
     fighter = sys.argv[1]
-    round = int(sys.argv[2])
-    offset = int(sys.argv[3]) if len(sys.argv) >= 4 else 0
+    round = sys.argv[2]
+    offset = int(sys.argv[3])
+    time_scale = int(sys.argv[4]) if len(sys.argv) >= 5 else 1
 
     pygame.init()
     screen = pygame.display.set_mode((200, 200))
 
-    start(fighter, round, offset)
+    start(fighter, round, offset, time_scale)
 
 if __name__ == "__main__":
     main()
