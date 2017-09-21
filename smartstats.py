@@ -46,13 +46,13 @@ def start(fighter, round, start_offset, time_scale):
     state = {}
     state['fighter'] = fighter
     state['round'] = round
-    state['start_offset'] = start_offset
     state['start_time'] = datetime.datetime.now()
     state['stats'] = []
     state['paused'] = False
     state['pause_elapsed_seconds'] = 0
     state['pointer'] = 0
     state['time_scale'] = time_scale
+    state['start_offset'] = start_offset * time_scale
 
     print banner
     print "-----------------------------"
@@ -156,7 +156,7 @@ def onKeyPress(state, punch_type):
         onTimeTravelForward(state)
     else:
         now = datetime.datetime.now()
-        diff = (now - state['start_time']).total_seconds()
+        diff = (now - state['start_time']).total_seconds() + state['start_offset']
         pause_adjusted = diff - state['pause_elapsed_seconds']
         time_scale_adjusted = pause_adjusted / state['time_scale']
         rounded = int(round(time_scale_adjusted))
