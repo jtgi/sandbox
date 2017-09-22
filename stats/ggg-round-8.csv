@@ -1,76 +1,76 @@
-4,7,ggg,0,jab
-4,7,ggg,0,jab
-7,7,ggg,0,jab
-8,7,ggg,0,cross
-10,7,ggg,0,body cross
-10,7,ggg,0,body lead hook
-11,7,ggg,0,rear hook
-14,7,ggg,1,jab
-15,7,ggg,1,jab
-16,7,ggg,1,rear upper
-17,7,ggg,0,lead hook
-17,7,ggg,0,rear hook
-17,7,ggg,0,lead upper
-17,7,ggg,0,cross
-20,7,ggg,1,jab
-21,7,ggg,0,cross
-22,7,ggg,0,jab
-25,7,ggg,0,jab
-29,7,ggg,1,jab
-30,7,ggg,1,cross
-34,7,ggg,0,lead hook
-36,7,ggg,1,jab
-43,7,ggg,1,rear upper
-43,7,ggg,1,jab
-44,7,ggg,0,jab
-45,7,ggg,0,cross
-45,7,ggg,0,jab
-46,7,ggg,0,jab
-48,7,ggg,1,jab
-61,7,ggg,0,jab
-62,7,ggg,0,jab
-65,7,ggg,1,rear hook
-68,7,ggg,0,jab
-68,7,ggg,1,jab
-69,7,ggg,0,rear hook
-73,7,ggg,0,jab
-74,7,ggg,0,lead hook
-75,7,ggg,0,jab
-80,7,ggg,0,jab
-83,7,ggg,1,rear upper
-87,7,ggg,0,jab
-89,7,ggg,0,rear hook
-98,7,ggg,0,jab
-98,7,ggg,0,jab
-102,7,ggg,0,cross
-105,7,ggg,0,jab
-107,7,ggg,0,cross
-107,7,ggg,0,lead upper
-111,7,ggg,0,cross
-111,7,ggg,0,lead upper
-114,7,ggg,0,jab
-119,7,ggg,0,cross
-121,7,ggg,1,lead hook
-122,7,ggg,0,lead upper
-124,7,ggg,0,jab
-125,7,ggg,0,jab
-125,7,ggg,0,cross
-130,7,ggg,1,jab
-134,7,ggg,1,jab
-136,7,ggg,0,rear hook
-138,7,ggg,0,jab
-140,7,ggg,0,lead hook
-140,7,ggg,0,rear hook
-143,7,ggg,0,jab
-154,7,ggg,0,cross
-154,7,ggg,0,rear hook
-154,7,ggg,0,lead hook
-159,7,ggg,0,jab
-160,7,ggg,0,jab
-162,7,ggg,0,cross
-164,7,ggg,0,jab
-166,7,ggg,0,cross
-169,7,ggg,1,jab
-170,7,ggg,0,jab
-171,7,ggg,1,body rear hook
-175,7,ggg,0,jab
+4,7,GGG,0,jab
+4,7,GGG,0,jab
+7,7,GGG,0,jab
+8,7,GGG,0,cross
+10,7,GGG,0,body cross
+10,7,GGG,0,body lead hook
+11,7,GGG,0,rear hook
+14,7,GGG,1,jab
+15,7,GGG,1,jab
+16,7,GGG,1,rear upper
+17,7,GGG,0,lead hook
+17,7,GGG,0,rear hook
+17,7,GGG,0,lead upper
+17,7,GGG,0,cross
+20,7,GGG,1,jab
+21,7,GGG,0,cross
+22,7,GGG,0,jab
+25,7,GGG,0,jab
+29,7,GGG,1,jab
+30,7,GGG,1,cross
+34,7,GGG,0,lead hook
+36,7,GGG,1,jab
+43,7,GGG,1,rear upper
+43,7,GGG,1,jab
+44,7,GGG,0,jab
+45,7,GGG,0,cross
+45,7,GGG,0,jab
+46,7,GGG,0,jab
+48,7,GGG,1,jab
+61,7,GGG,0,jab
+62,7,GGG,0,jab
+65,7,GGG,1,rear hook
+68,7,GGG,0,jab
+68,7,GGG,1,jab
+69,7,GGG,0,rear hook
+73,7,GGG,0,jab
+74,7,GGG,0,lead hook
+75,7,GGG,0,jab
+80,7,GGG,0,jab
+83,7,GGG,1,rear upper
+87,7,GGG,0,jab
+89,7,GGG,0,rear hook
+98,7,GGG,0,jab
+98,7,GGG,0,jab
+102,7,GGG,0,cross
+105,7,GGG,0,jab
+107,7,GGG,0,cross
+107,7,GGG,0,lead upper
+111,7,GGG,0,cross
+111,7,GGG,0,lead upper
+114,7,GGG,0,jab
+119,7,GGG,0,cross
+121,7,GGG,1,lead hook
+122,7,GGG,0,lead upper
+124,7,GGG,0,jab
+125,7,GGG,0,jab
+125,7,GGG,0,cross
+130,7,GGG,1,jab
+134,7,GGG,1,jab
+136,7,GGG,0,rear hook
+138,7,GGG,0,jab
+140,7,GGG,0,lead hook
+140,7,GGG,0,rear hook
+143,7,GGG,0,jab
+154,7,GGG,0,cross
+154,7,GGG,0,rear hook
+154,7,GGG,0,lead hook
+159,7,GGG,0,jab
+160,7,GGG,0,jab
+162,7,GGG,0,cross
+164,7,GGG,0,jab
+166,7,GGG,0,cross
+169,7,GGG,1,jab
+170,7,GGG,0,jab
+171,7,GGG,1,body rear hook
+175,7,GGG,0,jab
